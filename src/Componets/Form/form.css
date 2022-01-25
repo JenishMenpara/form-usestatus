@@ -1,0 +1,48 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    border: 1x solid red;
+    background-color: blueviolet;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.age-box input{
+    width: 50%;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.textaddress textarea{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+hr{
+    width: 100%;
+}
+label{
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+.submitbtn{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+
+
+}

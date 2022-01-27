@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "./form.css";
 
 export default function Form() {
+  const [first, setfirst] = useState(true);
   const [getoutput, setgetoutput] = useState({
     firstName: "",
     lastName: "",
@@ -34,6 +35,7 @@ export default function Form() {
     console.log(newdata);
     setnewdata([...newdata, data]);
     setgetoutput({ firstName: "", lastName: "", age: "", address: "" });
+    setfirst(!first)
     //setimage()
   };
 
@@ -73,7 +75,7 @@ export default function Form() {
 
   return (
     <>
-      <form className="main-container">
+    {first && ( <form className="main-container">
         <div className="input-box">
           <label>First Name</label>
           <input
@@ -131,7 +133,8 @@ export default function Form() {
             Submit
           </button>
         </div>
-      </form>
+      </form>)}
+     
 
       <div>
         {newdata.map((e) => {

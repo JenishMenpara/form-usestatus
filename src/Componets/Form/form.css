@@ -43,50 +43,52 @@ label {
   margin-top: 15px;
   cursor: pointer;
 }
-.card{
-    display: grid;
-    grid-template-columns: auto auto auto auto  ;
-    background-color: rgb(182, 132, 230);
-    text-align: center;
-    width: 25%;
-    min-height: 50px;
-    grid-gap: 1px;
-    border: 3px solid rgb(75, 26, 26);
-    border-radius: 5px;
-    padding: 2px;
-    
-   
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgb(218, 198, 238);
+  text-align: center;
+  width: 25%;
+  min-height: 50px;
+  grid-gap: 1px;
+  border: 3px solid rgb(75, 26, 26);
+  border-radius: 5px;
+  padding: 2px;
+ 
+  margin:auto;
+  margin-top: 200px;
 }
-.photo{
-    border: 1px solid rgb(228, 131, 131);
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 2;
+.photo {
+  border-radius: 5px;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
 }
-.photo img{
-  height: 100px;
-  width: 100px;
-}
-
-.firsname{
-    border: 1px solid red;
-    grid-column: 4 / span 5;
-    
+.photo img {
+  height: 105px;
+  width: 130px;
 }
 
-
-
-.age{
-    border: 1px solid red;
-    grid-column: 4 / span 5;
-    grid-row: 2;
+.firsname {
+  border: 2px solid rgb(228, 131, 131);
+  border-radius: 5px;
+  grid-column: 4 / span 5;
 }
 
-.address{
-    border: 1px solid red;
-    grid-column: 1 / span 8 ;
-    grid-row: 3 ;
+.age {
+  border: 2px solid rgb(228, 131, 131);
+  border-radius: 5px;
+  grid-column: 4 / span 5;
+  grid-row: 2;
 }
 
-p{
-color: red;
+.address {
+  border: 2px solid rgb(228, 131, 131);
+  width: 340px;
+  border-radius: 5px;
+  grid-column: 1 / span 8;
+  grid-row: 3;
+}
+
+p {
+  color: red;
 }

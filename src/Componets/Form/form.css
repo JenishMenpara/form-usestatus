@@ -1,48 +1,92 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
-    border: 1x solid red;
-    background-color: blueviolet;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 25px;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border: 1x solid red;
+  background-color: blueviolet;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 25px;
 }
 
-.input-box input{
-    width: 100%;
-    height: 25px;
-    border: 1px solid white;
+.input-box input {
+  width: 100%;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.age-box input {
+  width: 50%;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.textaddress textarea {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+hr {
+  width: 100%;
+}
+label {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.submitbtn {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    background-color: rgb(182, 132, 230);
+    text-align: center;
+    width: 25%;
+    min-height: 50px;
+    grid-gap: 1px;
+    border: 3px solid rgb(75, 26, 26);
     border-radius: 5px;
+    padding: 2px;
+    
+   
+}
+.photo{
+    border: 1px solid rgb(228, 131, 131);
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+.photo img{
+  height: 100px;
+  width: 100px;
 }
 
-.age-box input{
-    width: 50%;
-    height: 30px;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-.textaddress textarea{
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-hr{
-    width: 100%;
-}
-label{
-    padding: 5px;
-    font-size: 20px;
+.firsname{
+    border: 1px solid red;
+    grid-column: 4 / span 5;
+    
 }
 
 
-.submitbtn{
-    width: 100%;
-    height: 30px;
-    margin-top: 15px;
-    cursor: pointer;
 
+.age{
+    border: 1px solid red;
+    grid-column: 4 / span 5;
+    grid-row: 2;
+}
 
+.address{
+    border: 1px solid red;
+    grid-column: 1 / span 8 ;
+    grid-row: 3 ;
+}
+
+p{
+color: red;
 }
